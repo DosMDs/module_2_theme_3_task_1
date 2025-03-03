@@ -9,7 +9,7 @@ const Game = () => {
 	const [field, setField] = useState(["", "", "", "", "", "", "", "", ""]);
 
 	const update = (index) => {
-		if (field[index] !== "") {
+		if (field[index] !== "" || isGameEnded || isDraw) {
 			return;
 		}
 
