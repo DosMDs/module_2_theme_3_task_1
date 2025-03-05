@@ -25,9 +25,18 @@ const Game = () => {
 		setField(newField);
 	};
 
+	const handleRestart = () => {
+		setCurrentPlayer("X");
+		setIsGameEnded(false);
+		setIsDraw(false);
+		setField(["", "", "", "", "", "", "", "", ""]);
+	};
+
 	return (
 		<>
-			<InformationLayout {...{ currentPlayer, isGameEnded, isDraw }} />
+			<InformationLayout
+				{...{ currentPlayer, isGameEnded, isDraw, handleRestart }}
+			/>
 			<FieldLayout field={field} update={update} />
 		</>
 	);

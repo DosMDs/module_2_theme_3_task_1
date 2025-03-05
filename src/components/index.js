@@ -1,2 +1,2 @@
-export * from "./information-layout.jsx";
-export * from "./field-layout/field-layout.jsx";
+export * from "./information-layout/InformationLayout.jsx";
+export * from "./field-layout/FieldLayout.jsx";
